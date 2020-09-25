@@ -1,0 +1,211 @@
+/* Created and designed by Jhonatan Lopez */
+/* Most of this code was developed following Cristina Truong Course in linkedin.com */
+/* Simillar template could be found in her Github account https://github.com/christinatruong/css-essential-training */
+/* 
+Colour Palet
+=====================================================
+https://coolors.co/202c39-7a8b99-91adc2-d0f1bf-ddfbd2
+#343434 - rgb(52,52,52) - Dark Gray - Almost black
+#F7FFF7 - rgb(247,255,247) - Almost White
+#202C39 - rgb(32,44,57) - Gunmetal
+#758695 - rgb(117,134,149) - Light Slate Gray
+#91ADC2 - rgb(145,173,194) - Pewter Blue
+#D0F1BF - rgb(208,241,191) - Tee Green
+#DDFBD2 - rgb(221,251,210) - Nyanza
+*/
+
+/* Global Style
+=====================================================*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial,  sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+img{
+  width: 300px;
+}
+
+a {
+  text-decoration-color: #D0F1BF;
+  color: #D0F1BF;
+  }
+
+a:hover {
+  color: rgb(22, 214, 173);
+  text-decoration: none;
+  }
+
+.content-wrap{
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+ 
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+h1, h2 {
+  font-family: Courier, monospace;
+  font-weight: 700;
+  margin: 0em;
+  line-height: 1;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p{
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/* Profile 
+=====================================================*/
+header{
+  background: #272727;
+  color: #F7FFF7;
+  text-align: center;
+}
+
+/* Education 
+=====================================================*/
+.education {
+  color: #F7FFF7;
+  background-image: url(../img/backgroundJhonatanLopez.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+.education p {
+  width: 65%;
+}
+
+/* Projects 
+=====================================================*/
+.projects {
+  background: #ffffff;
+}
+.projects a {
+  text-decoration-color: #D0F1BF
+}
+.projects .button {
+  color: #F7FFF7;
+  background: rgb(117,134,149);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .button:hover {
+  background: rgb(117,134,149, 70%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+/* Work Experience 
+=====================================================*/
+.experience{
+  background: rgb(117,134,149, 70%);
+}
+
+/* Contact Info 
+=====================================================*/
+footer{
+  background: #343434;
+  color: #F7FFF7;
+  text-align: justify;
+}
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a{
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive Style
+=====================================================*/
+@media screen and (min-width:800px){
+  header, footer{
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin: 20px;
+  }
+  .job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:799px){
+  h1{
+    font-size: 3.5em;
+    line-height: 0.85;
+    margin-bottom: 10px;
+  }
+  h2{
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
+/* Copyleft
+=====================================================*/
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+  }
